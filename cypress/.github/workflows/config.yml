@@ -4,14 +4,12 @@ on: push
 
 jobs:
   cypress-run:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Sterling Retail Core
         uses: actions/checkout@v4
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run
+      - name: Execute Cypress Test
         uses: cypress-io/github-action@v6
-        with:
-          build: npm run build
-          start: npm start
+        
