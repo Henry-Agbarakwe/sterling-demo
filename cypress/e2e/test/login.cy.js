@@ -18,5 +18,6 @@ it.only('valid login user',()=>{
 })
 it ('invalid login',()=>{
   Login.setInvalidlogin()
+  Login.setlogin()
 })
 })
