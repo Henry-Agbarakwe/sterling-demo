@@ -1,17 +1,17 @@
-# name: STERLING PIPELINE
+name: STERLING PIPELINE
 
-# on: push
+on: push
 
-# jobs:
-#   cypress-run:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: PIPELINE
-#         uses: actions/checkout@v4
-#       # Install npm dependencies, cache them correctly
-#       # and run all Cypress tests
-#       - name: Cypress run
-#         uses: cypress-io/github-action@v6
-#         with:
-#           build: npm run build
-#           start: npm start
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PIPELINE
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm start
