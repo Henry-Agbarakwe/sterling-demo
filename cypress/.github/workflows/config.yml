@@ -1,15 +1,12 @@
-name: Sterling Pipeline
-
+name: End-to-end tests
 on: push
-
 jobs:
   cypress-run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - name: Sterling Retail Core
+      - name: Checkout
         uses: actions/checkout@v4
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Execute Cypress Test
+      - name: Cypress run
         uses: cypress-io/github-action@v6
-        
