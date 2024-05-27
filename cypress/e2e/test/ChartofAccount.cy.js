@@ -2,9 +2,12 @@ import account from "../pageObject/Accounting"
 import login from "../pageObject/login"
 import Config from "../pageObject/ConfigurationEngine"
 
+
 const Login = new login
 const Demo = new Config
 const accounting = new account
+
+
 
 describe('Create ledger', ()=>{
     beforeEach(()=>{
@@ -18,4 +21,5 @@ describe('Create ledger', ()=>{
         accounting.clickcreateLedgers()
   })
 })
+
 

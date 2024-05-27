@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
-//import { faker } from '@faker-js/faker';
+import { faker } from '@faker-js/faker';
 import login from '../pageObject/login'
+
 
 const Login = new login
 

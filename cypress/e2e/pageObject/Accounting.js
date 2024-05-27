@@ -1,3 +1,4 @@
+import { faker } from '@faker-js/faker'
 class account{
     clickcreateLedgers(){
         cy.get('.css-70qvj9 > .MuiButtonBase-root').click()
@@ -6,9 +7,9 @@ class account{
         cy.get('.MuiSelect-select').click()
         cy.get('#mui-53 > [tabindex="0"]').click()
         cy.wait (6000)
-        cy.get('#mui-56').type('Parent ledger 4R')
+        cy.get('#mui-56').type(faker.finance.accountName())
         cy.get('[data-testid="description"]').type('descrition')
-        cy.get('#mui-60').type('KBM')
+        cy.get('#mui-60').type(faker.random.alphaNumeric(3) )
         cy.get('#mui-62').type('0011')
         cy.get('#mui-63').type('1')
         cy.get('[data-testid="proceed-btn"]').click()

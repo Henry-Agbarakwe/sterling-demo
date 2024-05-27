@@ -1,7 +1,9 @@
+import { faker } from '@faker-js/faker';
 import login from '../pageObject/login'
 import Config from '../pageObject/ConfigurationEngine'
 const Login = new login
 const Demo = new Config
+
 
 describe('Sterling Bank retial core', ()=>{
 beforeEach(()=>{
