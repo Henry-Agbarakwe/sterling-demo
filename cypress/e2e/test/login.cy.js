@@ -8,16 +8,11 @@ describe('Sterling Bank retial core', ()=>{
 beforeEach(()=>{
   cy.visit('/')
 })
-it.only('valid login user',()=>{
-  // cy.visit('/')
-  // demo.setUsername()
-  // demo.setPassword()
-  // demo.setLoginButton()
+it('valid login user',()=>{
   Login.setlogin()
-
 })
-it ('invalid login',()=>{
+it('invalid login user',()=>{
   Login.setInvalidlogin()
-  Login.setlogin()
+
 })
 })
